@@ -7,7 +7,7 @@ import {UserService} from "@microfrontends/shared/data-access-user";
     <div class="login-app">
       <form class="login-form" (ngSubmit)="login()">
         <label>
-          Username:
+         Username:
           <input type="text" name="username" [(ngModel)]="username" />
         </label>
         <label>
