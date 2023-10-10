@@ -1,10 +1,11 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, ViewEncapsulation } from '@angular/core';
 import { Song } from '@microfrontends/songs/model';
 
 @Component({
   selector: 'playlist-song',
   templateUrl: './song.component.html',
   styleUrls: ['./song.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class SongComponent {
 
