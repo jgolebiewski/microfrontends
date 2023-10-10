@@ -1,0 +1,18 @@
+<form [formGroup]="form">
+<fieldset>
+    <legend>Song form</legend>
+    <div>
+        <label>
+            Artist
+            <input type="text" formControlName="artist" />
+        </label>
+
+        <label>
+            Track
+            <input type="text" formControlName="track" />
+        </label>
+    </div>
+
+    <button type="submit" (click)="addSong()">Save</button>
+</fieldset>
+</form>

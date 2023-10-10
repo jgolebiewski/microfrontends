@@ -1,0 +1,4 @@
+
+<ng-container *ngIf="songs$ | async as songs">
+    <playlist-song *ngFor="let song of songs" [song]="song" (listenedEv)="updateSong($event)" (favouriteEv)="updateSong($event)"></playlist-song>
+</ng-container>
