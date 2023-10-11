@@ -13,11 +13,7 @@ import { HttpClientModule } from "@angular/common/http";
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
-    HttpClientModule,
-    StoreModule.forRoot({
 
-    }),
-    EffectsModule.forRoot([]),
   ],
   providers: [],
   bootstrap: [AppComponent],
