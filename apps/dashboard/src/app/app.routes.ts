@@ -1,12 +1,18 @@
-
 import { Route } from '@angular/router';
 import { loadRemoteModule } from '@nx/angular/mf';
 
 export const appRoutes: Route[] = [
   {
+    path: 'standalone',
+    loadChildren: () =>
+      loadRemoteModule('standalone-app', './Routes').then(
+        (m) => m.remoteRoutes
+      ),
+  },
+  {
     path: 'songs',
     loadChildren: () =>
-      loadRemoteModule('songs', './Module').then((m) => m.RemoteEntryModule),
+      loadRemoteModule('songs', './Routes').then((m) => m.remoteRoutes),
   },
   // {
   //   path: 'login',
@@ -17,5 +23,4 @@ export const appRoutes: Route[] = [
     loadChildren: () =>
       loadRemoteModule('login', './Module').then((m) => m.RemoteEntryModule),
   },
-
 ];

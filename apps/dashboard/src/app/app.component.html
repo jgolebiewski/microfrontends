@@ -2,7 +2,10 @@
 <div class="bg-current"> Dashboard</div>
 <div >
   You are authenticated so you can see this content.
-  <a [routerLink]="['songs']" class="btn-secondary">Songs</a>
+  <ul>
+    <li><a [routerLink]="['songs']" class="btn-secondary">Songs</a></li>
+    <li><a [routerLink]="['standalone']" class="btn-secondary">Standalone</a></li>
+  </ul>
 </div>
 <!--<ng-template #signIn><router-outlet></router-outlet></ng-template>-->
 <router-outlet></router-outlet>

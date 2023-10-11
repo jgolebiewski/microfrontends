@@ -1,4 +1,5 @@
 {
   "login": "http://localhost:4201",
-  "songs": "http://localhost:4202"
+  "songs": "http://localhost:4202",
+  "standalone-app": "http://localhost:4203"
 }

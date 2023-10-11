@@ -1,6 +1,6 @@
 module.exports = {
   name: 'songs',
   exposes: {
-    './Module': 'apps/songs/src/app/remote-entry/entry.module.ts',
+    './Routes': 'apps/songs/src/app/remote-entry/entry.routes.ts',
   },
 };

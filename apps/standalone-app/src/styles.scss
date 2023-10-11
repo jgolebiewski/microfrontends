@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+
+  .btn-link{
+    @apply py-2 px-4 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none ;
+    background-color: theme('colors.warn[100]');
+  }
+}
